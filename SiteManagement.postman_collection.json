@@ -1,0 +1,1631 @@
+{
+	"info": {
+		"_postman_id": "3e7892cb-52fc-4b52-aa1d-49f94fa0c0bb",
+		"name": "SiteManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14394436"
+	},
+	"item": [
+		{
+			"name": "ApartmentAdmin",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/Find?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"apartmentId\": 0,\r\n  \"apartmentBlock\": \"B\",\r\n  \"apartmentIsEmpty\": false,\r\n  \"apartmentType\": \"3+1\",\r\n  \"apartmentFloor\": 1,\r\n  \"apartmentNumber\": 2,\r\n  \"apartmentIsOwner\": true,\r\n  \"apartmentStartDate\": \"2022-06-09\",\r\n  \"apartmentEndDate\": \"2023-06-09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/Add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"apartmentId\": 2,\r\n  \"apartmentBlock\": \"C\",\r\n  \"apartmentIsEmpty\": false,\r\n  \"apartmentType\": \"4+1\",\r\n  \"apartmentFloor\": 1,\r\n  \"apartmentNumber\": 2,\r\n  \"apartmentIsOwner\": true,\r\n  \"apartmentStartDate\": \"2022-06-09\",\r\n  \"apartmentEndDate\": \"2023-06-09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/Update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/Delete?id=6",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllApartments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ApartmentAdmin/GetAllApartments",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ApartmentAdmin",
+								"GetAllApartments"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "BillAdmin",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/BillAdmin/Find?id=8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"BillAdmin",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/BillAdmin/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"BillAdmin",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"billId\": 0,\r\n  \"billType\": \"Su\",\r\n  \"billSum\": 50.50,\r\n  \"billIsPaid\": true,\r\n  \"billDate\": \"2022-06-11\",\r\n  \"apartmentId\": 7,\r\n  \"userId\": 19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/BillAdmin/Add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"BillAdmin",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"billId\": 8,\r\n            \"billType\": \"Su\",\r\n            \"billSum\": 91.50,\r\n            \"billIsPaid\": true,\r\n            \"billDate\": \"2022-06-11T00:00:00\",\r\n            \"apartmentId\": 2,\r\n            \"userId\": 14\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/BillAdmin/Update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"BillAdmin",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"billId\": 8,\r\n            \"billType\": \"Su\",\r\n            \"billSum\": 91.50,\r\n            \"billIsPaid\": true,\r\n            \"billDate\": \"2022-06-11T00:00:00\",\r\n            \"apartmentId\": 2,\r\n            \"userId\": 14\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/BillAdmin/Delete?id=8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"BillAdmin",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "MessageAdmin",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/Find?id=2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"messageId\": 0,\r\n  \"messageTitle\": \"Hoş Geldin Programı\",\r\n  \"messageText\": \"Yeni gelen daire sakinlerine ziyaret\",\r\n  \"messageSender\": 1,\r\n  \"messageReceiver\": 19,\r\n  \"messageIsRead\": false,\r\n  \"messageDate\": \"2022-06-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/Add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/Update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/Delete?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MessageSender",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/MessageAdmin/MessageSender?Admin=1&User=13",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MessageAdmin",
+								"MessageSender"
+							],
+							"query": [
+								{
+									"key": "Admin",
+									"value": "1"
+								},
+								{
+									"key": "User",
+									"value": "13"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "UserAdmin",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/UserAdmin/Find?id=14",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"UserAdmin",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/UserAdmin/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"UserAdmin",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"userName\": \"Yasemin\",\r\n  \"userSurname\": \"Arslan\",\r\n  \"userTcnum\": \"09876543210\",\r\n  \"userEmail\": \"yasemin@gmail.com\",\r\n  \"userPassword\": \"12345678\",\r\n  \"userPhoneNum\": \"05050000000\",\r\n  \"userCarStatus\": \"false\",\r\n  \"userIsActive\": true,\r\n  \"apartmentId\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/UserAdmin/Add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"UserAdmin",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 14,\r\n    \"userName\": \"Hakan\",\r\n    \"userSurname\": \"Özoğlu\",\r\n    \"userTcnum\": \"09876543210\",\r\n    \"userEmail\": \"hakan@gmail.com\",\r\n    \"userPassword\": \"87654321\",\r\n    \"userPhoneNum\": \"05050000000\",\r\n    \"userCarStatus\": \"0\",\r\n    \"userIsActive\": true,\r\n    \"apartmentId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/UserAdmin/Update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"UserAdmin",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 16,\r\n    \"userName\": \"Hakan\",\r\n    \"userSurname\": \"Özoğlu\",\r\n    \"userTcnum\": \"01234567890\",\r\n    \"userEmail\": \"hakan@gmail.com\",\r\n    \"userPassword\": \"12345678\",\r\n    \"userPhoneNum\": \"05000000000\",\r\n    \"userCarStatus\": \"0\",\r\n    \"userIsActive\": true,\r\n    \"apartmentId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/UserAdmin/Delete?id=16",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"UserAdmin",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "UserLogin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userEmail\": \"safak@gmail.com\",\r\n  \"userPassword\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdminLogin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"adminEmail\": \"kaderarslandev@gmail.com\",\r\n  \"adminPassword\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/AdminLogin/Login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AdminLogin",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Apartment",
+			"item": [
+				{
+					"name": "Get List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/Apartment/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Apartment",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/Apartment/Find?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Apartment",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "Get List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/Bill/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Bill",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/Bill/Find?id=8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Bill",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "MessageSender",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/Message/MessageSender?User=13&Admin=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Message",
+								"MessageSender"
+							],
+							"query": [
+								{
+									"key": "User",
+									"value": "13"
+								},
+								{
+									"key": "Admin",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"messageId\": 0,\r\n  \"messageTitle\": \"C Blok Toplantısı\",\r\n  \"messageText\": \"Bugün C Blok sakinleri ile toplantı gerçekleştireceğiz.\",\r\n  \"messageSender\": 19,\r\n  \"messageReceiver\": 1,\r\n  \"messageIsRead\": false,\r\n  \"messageDate\": \"2022-06-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/Message/Add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"Message",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/User/Find?id=14",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"Find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/User/GetAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthZGVyYXJzbGFuZGV2QGdtYWlsLmNvbSIsImp0aSI6IjEiLCJuYmYiOjE2NTQ5NzAyMDQsImV4cCI6MTY1NTA1NjYwNCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NDYyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTQ2MjAifQ.GffiVwaX9Wriab8wLu2HqjYwL1if5gqC71qrQBHH3qw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:54620",
+			"type": "default"
+		}
+	]
+}
