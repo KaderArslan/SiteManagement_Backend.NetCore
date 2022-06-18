@@ -93,7 +93,10 @@ faturalarının yönetimini bir sistem üzerinden yapacaksınız.
 ---
 ### Postman ile sorguları get post metodlarını görebilmeniz için [postman_collection](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/SiteManagement.postman_collection.json) dosyasını postmaninize import ederek kullanabilirsiniz.
 #### Postman Admin Login: Login olduktan sonra üretilen accesstoken bilgisine diğer gerçekleştirmek istediğiniz metodların Authorization Bearer Token bölümüne yapıştırarak sorgularınızı gerçekleştirebilirsiniz.
+#### Admin Login
 ![Postman Login](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/postmanlogin.png)
+#### Message Admin
+![Postman Message Admin](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/postman.png)
 
 ### Uygulama burada açılacaktır:
 ---
