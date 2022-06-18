@@ -1,11 +1,22 @@
 # Site Management
--------------------
-Proje: Bir sitede yöneticisiniz. Sitenizde yer alan dairelerin aidat ve ortak kullanım elektrik, su ve doğalgaz
-faturalarının yönetimini bir sistem üzerinden yapacaksınız.
-
 React Projesi : https://github.com/KaderArslan/SiteManagement_Frontend_React
 
-### .NetCore Projesi için Yapılanlar;
+## Proje:
+Bir sitede yöneticisiniz. Sitenizde yer alan dairelerin aidat ve ortak kullanım elektrik, su ve doğalgaz
+faturalarının yönetimini bir sistem üzerinden yapacaksınız.
+
+### Projede kullanılacaklar:
+---
+- [x] Web projesi backend için .Net Core, frontend için React.js kullanın.
+- [x] Sistemin yönetimi/database için MS SQL Server kullanın.
+- [x] Kredi kartı servisi için. Veriler mongodb de tutulacak. Servis .Net WebApi olarak yazılacaktır.
+
+### Kullanılan Teknolojiler
+---
+<img src="https://img.shields.io/badge/-diagrams-F08705?logo=diagrams.net&logoColor=fff"> <img src="https://img.shields.io/badge/-MsSQL-CC2927?logo=microsoftsqlserver&logoColor=fff"> <img src="https://img.shields.io/badge/-MongoDB-29b930?logo=mongodb&logoColor=fff"> <img src="https://img.shields.io/badge/-.Net5-512BD4?logo=.net&logoColor=fff"> <img src="https://img.shields.io/badge/-Json%20Web%20Tokens-000000?logo=jsonwebtokens&logoColor=fff"> <img src="https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=fff"> <img src="https://img.shields.io/badge/-Swagger-85EA2D?logo=swagger&logoColor=fff"> <img src="https://img.shields.io/badge/-VS-5C2D91?logo=visualstudio&logoColor=fff">
+
+### .NetCore Projesi için Yapılanlar:
+---
 ● Admin/Yönetici
 - [x] Daire bilgilerini girebilir.
 - [x] İkamet eden kullanıcı bilgilerini girer.
@@ -39,17 +50,16 @@ React Projesi : https://github.com/KaderArslan/SiteManagement_Frontend_React
 - [x] Telefon
 - [x] Araç bilgisi(varsa plaka no)
 
-#### Postman ile sorguları daha rahat görebilirsiniz. Bunun için [postman_collection](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/SiteManagement.postman_collection.json) dosyasını postmaninize import edebilirsiniz.
-![Postman](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/postman.png)
-
-#### DataBase Diagram
+## Uygulama Görselleri
+---
+### MSSQL DataBase Diagram
+---
 ![Database Diagram](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/DatabaseDiagram.png)
 
-### Kullanılan Teknolojiler
-<img src="https://img.shields.io/badge/-diagrams-F08705?logo=diagrams.net&logoColor=fff"> <img src="https://img.shields.io/badge/-MsSQL-CC2927?logo=microsoftsqlserver&logoColor=fff"> <img src="https://img.shields.io/badge/-.Net5-512BD4?logo=.net&logoColor=fff"> <img src="https://img.shields.io/badge/-json-000000?logo=json&logoColor=fff"> <img src="https://img.shields.io/badge/-Json%20Web%20Tokens-000000?logo=jsonwebtokens&logoColor=fff"> <img src="https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=fff"> <img src="https://img.shields.io/badge/-Swagger-85EA2D?logo=swagger&logoColor=fff"> <img src="https://img.shields.io/badge/-VS-5C2D91?logo=visualstudio&logoColor=fff">
+### Postman ile sorguları daha rahat görebilirsiniz. Bunun için [postman_collection](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/SiteManagement.postman_collection.json) dosyasını postmaninize import edebilirsiniz.
+![Postman](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/postman.png)
 
-#### Uygulama burada açılacaktır:
-
-```http://localhost:54620``` değişiklik gösterebilir.
-
-
+### Uygulama burada açılacaktır:
+---
+SiteManagement.WebApi: ```http://localhost:54620``` değişiklik gösterebilir.
+SiteManagement.MongoDbApi: ```http://localhost:1606``` değişiklik gösterebilir.
