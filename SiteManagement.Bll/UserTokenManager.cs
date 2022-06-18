@@ -28,7 +28,7 @@ namespace SiteManagement.Bll
             //1. claim id gibi, usercode gibi role gibi bilgileri claimlere gomeriz
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Email, user.UserEmail),
+                new Claim(JwtRegisteredClaimNames.Sub, user.UserEmail),
 
                 new Claim(JwtRegisteredClaimNames.Jti, user.UserId.ToString())
             };

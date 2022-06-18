@@ -12,7 +12,7 @@ namespace SiteManagement.Entity.Dto
     {
         [Required(ErrorMessage = "Email alanı boş bırakılamaz!")]
         [StringLength(maximumLength: 50)]
-        [DataType(DataType.Text)]
+        [DataType(DataType.EmailAddress)]
         public string UserEmail { get; set; }
 
         [Required(ErrorMessage = "Parola alanı boş bırakılamaz!")]

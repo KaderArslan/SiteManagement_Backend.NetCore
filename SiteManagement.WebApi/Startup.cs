@@ -23,8 +23,10 @@ using System.Threading.Tasks;
 
 namespace SiteManagement.WebApi
 {
-    public class Startup
+    public class Startup   
     {
+        readonly string ApiCorsPolicy = "AllowOrigin";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -113,6 +115,13 @@ namespace SiteManagement.WebApi
             #endregion
 
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(ApiCorsPolicy,
+                    builder => builder.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SiteManagement.WebApi", Version = "v1" });
@@ -131,8 +140,13 @@ namespace SiteManagement.WebApi
             }
 
 
+            //var app = builder.Build();
+            //app.UseHttpsRedirection();
+            //app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseCors(ApiCorsPolicy);
 
             app.UseAuthorization();
 
@@ -140,6 +154,8 @@ namespace SiteManagement.WebApi
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }

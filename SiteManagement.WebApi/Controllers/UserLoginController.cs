@@ -22,8 +22,8 @@ namespace SiteManagement.WebApi.Controllers
             this.userLoginService = userLoginService;
         }
 
-        [HttpPost("login")]
-        //[AllowAnonymous]
+        [HttpPost("user")]
+        [AllowAnonymous]
         //token olmadan da bu işlemi gerçekleştir.
         public IResponse<DtoUserToken> Login(DtoULogin login)
         {

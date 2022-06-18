@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.Dal", "SiteManagement.Dal\SiteManagement.Dal.csproj", "{9C9F3D7C-F944-495A-B17C-CABF0D1B4438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteManagement.Dal", "SiteManagement.Dal\SiteManagement.Dal.csproj", "{9C9F3D7C-F944-495A-B17C-CABF0D1B4438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.Bll", "SiteManagement.Bll\SiteManagement.Bll.csproj", "{2666A95F-2518-436A-BA1B-301CD3C24E6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteManagement.Bll", "SiteManagement.Bll\SiteManagement.Bll.csproj", "{2666A95F-2518-436A-BA1B-301CD3C24E6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.Entity", "SiteManagement.Entity\SiteManagement.Entity.csproj", "{F434B0C0-7FF9-4DBA-8444-58FD1EB269A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteManagement.Entity", "SiteManagement.Entity\SiteManagement.Entity.csproj", "{F434B0C0-7FF9-4DBA-8444-58FD1EB269A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.Interface", "SiteManagement.Interface\SiteManagement.Interface.csproj", "{5508BAFA-02E4-4B12-BC5B-511ED6B3D23C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteManagement.Interface", "SiteManagement.Interface\SiteManagement.Interface.csproj", "{5508BAFA-02E4-4B12-BC5B-511ED6B3D23C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.WebApi", "SiteManagement.WebApi\SiteManagement.WebApi.csproj", "{1D012B26-BA23-4422-881E-A6C22C972F0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteManagement.WebApi", "SiteManagement.WebApi\SiteManagement.WebApi.csproj", "{1D012B26-BA23-4422-881E-A6C22C972F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteManagement.MongoDbApi", "SiteManagement.MongoDbApi\SiteManagement.MongoDbApi.csproj", "{019DF594-3821-493D-B91D-06D77958BF54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1D012B26-BA23-4422-881E-A6C22C972F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D012B26-BA23-4422-881E-A6C22C972F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D012B26-BA23-4422-881E-A6C22C972F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019DF594-3821-493D-B91D-06D77958BF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019DF594-3821-493D-B91D-06D77958BF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019DF594-3821-493D-B91D-06D77958BF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019DF594-3821-493D-B91D-06D77958BF54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

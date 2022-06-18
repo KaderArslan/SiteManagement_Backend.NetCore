@@ -11,7 +11,7 @@ using System;
 
 namespace SiteManagement.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("")]
     [ApiController]
     public class AdminLoginController : ControllerBase
     {
@@ -22,8 +22,9 @@ namespace SiteManagement.WebApi.Controllers
             this.adminLoginService = adminLoginService;
         }
 
-        [HttpPost("Login")]
-        //[AllowAnonymous]
+        [HttpPost("admin")]
+        //[HttpPost("Login")]
+        [AllowAnonymous]
         //token olmadan da bu işlemi gerçekleştir.
         public IResponse<DtoAdminToken> Login(DtoALogin login)
         {
