@@ -51,13 +51,49 @@ faturalarının yönetimini bir sistem üzerinden yapacaksınız.
 - [x] Araç bilgisi(varsa plaka no)
 
 ## Uygulama Görselleri
----
 ### MSSQL DataBase Diagram
 ---
-![Database Diagram](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/DatabaseDiagram.png)
-
-### Postman ile sorguları daha rahat görebilirsiniz. Bunun için [postman_collection](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/SiteManagement.postman_collection.json) dosyasını postmaninize import edebilirsiniz.
-![Postman](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/postman.png)
+![Database Diagram](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/DatabaseDiagram.png)
+#### Admin Login; İki farklı giriş senaryosu gerçekleştirdim. Admin Login ve User Login. Girişleri farklı ver görüntüledikleri farklı olacak şekilde proje geliştirildi.
+```
+{
+  "adminEmail": "kaderarslandev@gmail.com",
+  "adminPassword": "12345678"
+}
+```
+![Admin Login](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/adminlogin.png)
+#### User Login
+```
+{
+  "userEmail": "safak@gmail.com",
+  "userPassword": "12345678"
+}
+```
+![User Login](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/userlogin.png)
+---
+#### Apartment User: Kullanıcı giriş yaptıktan sonra görüntüleyebileceği Apartman bilgileri;
+![Apartment User](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/apartmentuser.png)
+#### Apartment Admin: Admin giriş yaptıktan sonra görüntüleyebileceği Apartman bilgileri;
+![Apartment Admin](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/apartmentadmin.png)
+---
+#### Bill User: Kullanıcı giriş yaptıktan sonra görüntüleyebileceği Fatura bilgileri;
+![Bill User](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/billuser.png)
+#### Bill Admin: Admin giriş yaptıktan sonra görüntüleyebileceği Fatura bilgileri;
+![Bill Admin](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/billadmin.png)
+---
+#### Message User: Kullanıcı giriş yaptıktan sonra görüntüleyebileceği Mesajlaşma bilgileri;
+![Message User](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/messageuser.png)
+#### Message Admin: Admin giriş yaptıktan sonra görüntüleyebileceği Mesajlaşma bilgileri;
+![Message Admin](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/messageadmin.png)
+---
+#### User User: Kullanıcı giriş yaptıktan sonra görüntüleyebileceği Kullanıcı bilgileri;
+![User User](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/useruser.png)
+#### User Admin: Admin giriş yaptıktan sonra görüntüleyebileceği Kullanıcı bilgileri;
+![User Admin](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/useradmin.png)
+---
+### Postman ile sorguları get post metodlarını görebilmeniz için [postman_collection](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/SiteManagement.postman_collection.json) dosyasını postmaninize import ederek kullanabilirsiniz.
+#### Postman Admin Login: Login olduktan sonra üretilen accesstoken bilgisine diğer gerçekleştirmek istediğiniz metodların Authorization Bearer Token bölümüne yapıştırarak sorgularınızı gerçekleştirebilirsiniz.
+![Postman Login](https://github.com/KaderArslan/SiteManagement_Backend.NetCore/blob/master/screenshots/postmanlogin.png)
 
 ### Uygulama burada açılacaktır:
 ---
